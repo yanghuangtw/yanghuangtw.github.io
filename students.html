@@ -73,6 +73,15 @@
     color: var(--green-mid);
     font-style: italic;
   }
+  .empty-box {
+    background: var(--bg-soft);
+    border: 1px dashed var(--border);
+    border-radius: 12px;
+    padding: 28px 32px;
+    color: var(--text-muted);
+    font-size: 14px;
+    margin-top: 8px;
+  }
   .recruit-box {
     margin-top: 40px;
   }
@@ -91,79 +100,39 @@
 </nav>
 
 <div class="container">
+
   <div class="section">
-    <h2>Students</h2>
+    <h2>Ph.D. Students</h2>
+    <div class="empty-box">
+      I am currently looking for Ph.D. students. If you are interested in joining the lab, please reach out at <a href="mailto:yanghuang@dragon.nchu.edu.tw" style="color: var(--green);">yanghuang@dragon.nchu.edu.tw</a>.
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>M.S. Students</h2>
     <div class="students-grid">
 
       <div class="student-card">
         <div class="student-photo">Photo</div>
-        <div class="student-name">Student Name</div>
-        <div class="student-year">M.S. 2024</div>
+        <div class="student-name">吳震韋</div>
+        <div class="student-year">M.S. 2025</div>
+        <div class="student-meta">
+          <span class="label">Research</span>
+          <span class="value">Time-series Forecasting</span>
+          <span class="label">Thesis</span>
+          <span class="value thesis-inprogress">In progress</span>
+        </div>
+      </div>
+
+      <div class="student-card">
+        <div class="student-photo">Photo</div>
+        <div class="student-name">吳宛玲</div>
+        <div class="student-year">M.S. 2025</div>
         <div class="student-meta">
           <span class="label">Research</span>
           <span class="value">Recommendation Systems</span>
           <span class="label">Thesis</span>
           <span class="value thesis-inprogress">In progress</span>
-        </div>
-      </div>
-
-      <div class="student-card">
-        <div class="student-photo">Photo</div>
-        <div class="student-name">Student Name</div>
-        <div class="student-year">M.S. 2024</div>
-        <div class="student-meta">
-          <span class="label">Research</span>
-          <span class="value">Deep Learning</span>
-          <span class="label">Thesis</span>
-          <span class="value thesis-inprogress">In progress</span>
-        </div>
-      </div>
-
-      <div class="student-card">
-        <div class="student-photo">Photo</div>
-        <div class="student-name">Student Name</div>
-        <div class="student-year">M.S. 2023</div>
-        <div class="student-meta">
-          <span class="label">Research</span>
-          <span class="value">Machine Learning</span>
-          <span class="label">Thesis</span>
-          <span class="value">A Deep Learning Approach for News Recommendation</span>
-        </div>
-      </div>
-
-      <div class="student-card">
-        <div class="student-photo">Photo</div>
-        <div class="student-name">Student Name</div>
-        <div class="student-year">M.S. 2023</div>
-        <div class="student-meta">
-          <span class="label">Research</span>
-          <span class="value">Data Analytics</span>
-          <span class="label">Thesis</span>
-          <span class="value">Graph-based Recommendation with Attention Networks</span>
-        </div>
-      </div>
-
-      <div class="student-card">
-        <div class="student-photo">Photo</div>
-        <div class="student-name">Student Name</div>
-        <div class="student-year">M.S. 2023</div>
-        <div class="student-meta">
-          <span class="label">Research</span>
-          <span class="value">Recommendation Systems</span>
-          <span class="label">Thesis</span>
-          <span class="value thesis-inprogress">In progress</span>
-        </div>
-      </div>
-
-      <div class="student-card">
-        <div class="student-photo">Photo</div>
-        <div class="student-name">Student Name</div>
-        <div class="student-year">M.S. 2022</div>
-        <div class="student-meta">
-          <span class="label">Research</span>
-          <span class="value">Deep Learning</span>
-          <span class="label">Thesis</span>
-          <span class="value">Variational Autoencoder for Fault Detection</span>
         </div>
       </div>
 
@@ -173,9 +142,10 @@
   <div class="recruit-box">
     <div style="background: var(--green-light); border: 1px solid #9FE1CB; border-radius: 12px; padding: 28px 32px;">
       <h3 style="font-family: 'DM Serif Display', serif; font-size: 20px; color: var(--green-dark); margin-bottom: 10px;">Prospective Students</h3>
-      <p style="font-size: 14px; color: var(--green-dark); opacity: 0.85;">I am actively looking for motivated graduate students interested in recommendation systems, deep learning, and data analytics. If you are passionate about AI research and want to work on impactful problems, feel free to reach out at <a href="mailto:yanghuang@dragon.nchu.edu.tw" style="color: var(--green);">yanghuang@dragon.nchu.edu.tw</a>.</p>
+      <p style="font-size: 14px; color: var(--green-dark); opacity: 0.85;">I am actively looking for motivated graduate students interested in recommendation systems, machine unlearning, and machine learning. If you are passionate about AI research and want to work on impactful problems, feel free to reach out at <a href="mailto:yanghuang@dragon.nchu.edu.tw" style="color: var(--green);">yanghuang@dragon.nchu.edu.tw</a>.</p>
     </div>
   </div>
+
 </div>
 </body>
 </html>

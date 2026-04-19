@@ -21,7 +21,7 @@ nav { display: flex; align-items: center; justify-content: space-between; paddin
 .nav-links a:hover { background: var(--bg-soft); color: var(--text); }
 .nav-links a.active { background: var(--green); color: white; }
 
-.container { max-width: 860px; margin: 0 auto; padding: 48px 32px 80px; }
+.container { max-width: 1080px; margin: 0 auto; padding: 48px 32px 80px; }
 
 .hero-card { background: var(--bg-soft); border: 1px solid var(--border); border-radius: 14px; padding: 36px 40px; display: flex; align-items: flex-start; justify-content: space-between; gap: 32px; margin-bottom: 40px; }
 .hero-text h1 { font-family: 'DM Serif Display', serif; font-size: 30px; font-weight: 400; color: var(--text); margin-bottom: 14px; }

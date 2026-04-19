@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Students | Yang Huang</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .students-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 8px;
+  }
+  .student-card {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .student-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--border);
+    background: var(--bg-soft);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-bottom: 14px;
+    flex-shrink: 0;
+  }
+  .student-name {
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+  .student-year {
+    font-size: 12px;
+    color: white;
+    background: var(--green);
+    padding: 2px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  .student-meta {
+    font-size: 12px;
+    color: var(--text-muted);
+    line-height: 1.6;
+    width: 100%;
+    text-align: left;
+  }
+  .student-meta .label {
+    font-weight: 500;
+    color: var(--text);
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 1px;
+  }
+  .student-meta .value {
+    color: var(--text-muted);
+  }
+  .thesis-inprogress {
+    color: var(--green-mid);
+    font-style: italic;
+  }
+  .recruit-box {
+    margin-top: 40px;
+  }
+</style>
+</head>
+<body>
+<nav>
+  <a class="nav-name" href="index.html">Yang Huang</a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="publications.html">Publications</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="students.html" class="active">Students</a>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="section">
+    <h2>Students</h2>
+    <div class="students-grid">
+
+      <div class="student-card">
+        <div class="student-photo">Photo</div>
+        <div class="student-name">Student Name</div>
+        <div class="student-year">M.S. 2024</div>
+        <div class="student-meta">
+          <span class="label">Research</span>
+          <span class="value">Recommendation Systems</span>
+          <span class="label">Thesis</span>
+          <span class="value thesis-inprogress">In progress</span>
+        </div>
+      </div>
+
+      <div class="student-card">
+        <div class="student-photo">Photo</div>
+        <div class="student-name">Student Name</div>
+        <div class="student-year">M.S. 2024</div>
+        <div class="student-meta">
+          <span class="label">Research</span>
+          <span class="value">Deep Learning</span>
+          <span class="label">Thesis</span>
+          <span class="value thesis-inprogress">In progress</span>
+        </div>
+      </div>
+
+      <div class="student-card">
+        <div class="student-photo">Photo</div>
+        <div class="student-name">Student Name</div>
+        <div class="student-year">M.S. 2023</div>
+        <div class="student-meta">
+          <span class="label">Research</span>
+          <span class="value">Machine Learning</span>
+          <span class="label">Thesis</span>
+          <span class="value">A Deep Learning Approach for News Recommendation</span>
+        </div>
+      </div>
+
+      <div class="student-card">
+        <div class="student-photo">Photo</div>
+        <div class="student-name">Student Name</div>
+        <div class="student-year">M.S. 2023</div>
+        <div class="student-meta">
+          <span class="label">Research</span>
+          <span class="value">Data Analytics</span>
+          <span class="label">Thesis</span>
+          <span class="value">Graph-based Recommendation with Attention Networks</span>
+        </div>
+      </div>
+
+      <div class="student-card">
+        <div class="student-photo">Photo</div>
+        <div class="student-name">Student Name</div>
+        <div class="student-year">M.S. 2023</div>
+        <div class="student-meta">
+          <span class="label">Research</span>
+          <span class="value">Recommendation Systems</span>
+          <span class="label">Thesis</span>
+          <span class="value thesis-inprogress">In progress</span>
+        </div>
+      </div>
+
+      <div class="student-card">
+        <div class="student-photo">Photo</div>
+        <div class="student-name">Student Name</div>
+        <div class="student-year">M.S. 2022</div>
+        <div class="student-meta">
+          <span class="label">Research</span>
+          <span class="value">Deep Learning</span>
+          <span class="label">Thesis</span>
+          <span class="value">Variational Autoencoder for Fault Detection</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="recruit-box">
+    <div style="background: var(--green-light); border: 1px solid #9FE1CB; border-radius: 12px; padding: 28px 32px;">
+      <h3 style="font-family: 'DM Serif Display', serif; font-size: 20px; color: var(--green-dark); margin-bottom: 10px;">Prospective Students</h3>
+      <p style="font-size: 14px; color: var(--green-dark); opacity: 0.85;">I am actively looking for motivated graduate students interested in recommendation systems, deep learning, and data analytics. If you are passionate about AI research and want to work on impactful problems, feel free to reach out at <a href="mailto:yanghuang@dragon.nchu.edu.tw" style="color: var(--green);">yanghuang@dragon.nchu.edu.tw</a>.</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

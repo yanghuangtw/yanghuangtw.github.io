@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=DM+Serif+Display&display=swap');
+
+:root {
+  --green: #0F6E56;
+  --green-light: #E1F5EE;
+  --green-mid: #1D9E75;
+  --green-dark: #085041;
+  --text: #1a1a1a;
+  --text-muted: #555;
+  --border: #e5e5e5;
+  --bg: #ffffff;
+  --bg-soft: #f7f8f6;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'DM Sans', sans-serif; color: var(--text); background: var(--bg); font-size: 15px; line-height: 1.7; }
+
+nav { display: flex; align-items: center; justify-content: space-between; padding: 0 48px; height: 60px; border-bottom: 1px solid var(--border); background: var(--bg); position: sticky; top: 0; z-index: 100; }
+.nav-name { font-family: 'DM Serif Display', serif; font-size: 20px; color: var(--text); text-decoration: none; }
+.nav-links { display: flex; gap: 4px; }
+.nav-links a { padding: 6px 16px; font-size: 14px; color: var(--text-muted); text-decoration: none; border-radius: 6px; transition: background 0.15s, color 0.15s; }
+.nav-links a:hover { background: var(--bg-soft); color: var(--text); }
+.nav-links a.active { background: var(--green); color: white; }
+
+.container { max-width: 860px; margin: 0 auto; padding: 48px 32px 80px; }
+
+.hero-card { background: var(--bg-soft); border: 1px solid var(--border); border-radius: 14px; padding: 36px 40px; display: flex; align-items: flex-start; justify-content: space-between; gap: 32px; margin-bottom: 40px; }
+.hero-text h1 { font-family: 'DM Serif Display', serif; font-size: 30px; font-weight: 400; color: var(--text); margin-bottom: 14px; }
+.hero-text .role { font-size: 14px; color: var(--text-muted); margin-bottom: 4px; }
+.hero-text .email { margin-top: 16px; font-size: 14px; }
+.hero-text .email a { color: var(--green); text-decoration: none; }
+.hero-text .email a:hover { text-decoration: underline; }
+.avatar { width: 110px; height: 110px; border-radius: 50%; object-fit: cover; border: 3px solid var(--border); flex-shrink: 0; background: var(--border); display: flex; align-items: center; justify-content: center; font-size: 12px; color: var(--text-muted); }
+
+.section { margin-bottom: 40px; }
+.section h2 { font-family: 'DM Serif Display', serif; font-size: 22px; font-weight: 400; color: var(--text); margin-bottom: 16px; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+.section p { color: var(--text-muted); margin-bottom: 12px; }
+.section ul { list-style: none; padding: 0; }
+.section ul li { color: var(--text-muted); padding: 5px 0 5px 18px; position: relative; }
+.section ul li::before { content: ''; position: absolute; left: 0; top: 14px; width: 6px; height: 6px; border-radius: 50%; background: var(--green-mid); }
+
+.edu-item { padding: 14px 0; border-bottom: 1px solid var(--border); }
+.edu-item:last-child { border-bottom: none; }
+.edu-item .degree { font-weight: 500; color: var(--text); margin-bottom: 2px; }
+.edu-item .school { font-size: 14px; color: var(--text-muted); }
+.edu-item .year { font-size: 13px; color: var(--green); margin-top: 2px; }
+
+.pub-year { font-family: 'DM Serif Display', serif; font-size: 20px; color: var(--text); margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+.pub-year:first-child { margin-top: 0; }
+.pub-item { padding: 14px 0; border-bottom: 1px solid var(--border); }
+.pub-item:last-child { border-bottom: none; }
+.pub-item .pub-title { font-weight: 500; color: var(--text); margin-bottom: 4px; line-height: 1.5; }
+.pub-item .pub-authors { font-size: 13px; color: var(--text-muted); margin-bottom: 3px; }
+.pub-item .pub-venue { font-size: 13px; color: var(--green); font-style: italic; }
+.pub-badge { display: inline-block; font-size: 11px; padding: 2px 8px; border-radius: 4px; margin-right: 6px; font-weight: 500; }
+.badge-journal { background: var(--green-light); color: var(--green-dark); }
+.badge-conf { background: #EEF2FF; color: #3730A3; }
+
+.course-item { padding: 16px 0; border-bottom: 1px solid var(--border); display: flex; align-items: flex-start; gap: 16px; }
+.course-item:last-child { border-bottom: none; }
+.course-icon { width: 40px; height: 40px; border-radius: 8px; background: var(--green-light); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.course-icon svg { width: 18px; height: 18px; stroke: var(--green); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.course-name { font-weight: 500; color: var(--text); margin-bottom: 2px; }
+.course-desc { font-size: 13px; color: var(--text-muted); }
+
+.recruit-box { background: var(--green-light); border: 1px solid #9FE1CB; border-radius: 12px; padding: 28px 32px; margin-bottom: 32px; }
+.recruit-box h3 { font-family: 'DM Serif Display', serif; font-size: 20px; color: var(--green-dark); margin-bottom: 10px; }
+.recruit-box p { font-size: 14px; color: var(--green-dark); opacity: 0.85; }
+.recruit-box a { color: var(--green); }

@@ -43,6 +43,7 @@ nav { display: flex; align-items: center; justify-content: space-between; paddin
 .research-list li::before { display: none !important; }
 
 .edu-item { padding: 14px 0; border-bottom: 1px solid var(--border); }
+.edu-item:first-of-type { padding-top: 0; }
 .edu-item:last-child { border-bottom: none; }
 .edu-item .degree { font-weight: 500; color: var(--text); margin-bottom: 2px; text-align: left; }
 .edu-item .school { font-size: 14px; color: var(--text-muted); text-align: left; }

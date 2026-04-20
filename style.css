@@ -41,6 +41,7 @@ nav { display: flex; align-items: center; justify-content: space-between; paddin
 .section ul li::before { content: ''; position: absolute; left: 0; top: 14px; width: 6px; height: 6px; border-radius: 50%; background: var(--green-mid); }
 .research-list li { padding: 0 !important; }
 .research-list li::before { display: none !important; }
+.research-list { padding-top: 8px !important; }
 
 .edu-item { padding: 14px 0; border-bottom: 1px solid var(--border); }
 .edu-item:first-of-type { padding-top: 0; }

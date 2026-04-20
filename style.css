@@ -35,14 +35,12 @@ nav { display: flex; align-items: center; justify-content: space-between; paddin
 
 .section { margin-bottom: 40px; }
 .section h2 { font-family: 'DM Serif Display', serif; font-size: 22px; font-weight: 400; color: var(--text); margin-bottom: 16px; padding-bottom: 10px; border-bottom: 1px solid var(--border); text-align: left; }
+.research-list { margin-top: -16px; }
+.research-list li::before { display: none !important; }
 .section p { color: var(--text-muted); margin-bottom: 12px; }
 .section ul { list-style: none; padding: 0; }
 .section ul li { color: var(--text-muted); padding: 5px 0 5px 18px; position: relative; }
 .section ul li::before { content: ''; position: absolute; left: 0; top: 14px; width: 6px; height: 6px; border-radius: 50%; background: var(--green-mid); }
-.research-list li { padding: 0 !important; }
-.research-list li::before { display: none !important; }
-.research-list { padding-top: 0 !important; margin-top: -10px; }
-
 .edu-item { padding: 14px 0; border-bottom: 1px solid var(--border); }
 .edu-item:first-of-type { padding-top: 0; }
 .edu-item:last-child { border-bottom: none; }

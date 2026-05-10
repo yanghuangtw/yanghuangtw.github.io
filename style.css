@@ -72,6 +72,9 @@ nav { display: flex; align-items: center; justify-content: space-between; paddin
 .recruit-box p { font-size: 14px; color: var(--green-dark); opacity: 0.85; }
 .recruit-box a { color: var(--green); }
 
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+.two-col .section { margin-bottom: 0; }
+
 @media (max-width: 768px) {
   nav { padding: 0 20px; }
   .nav-links a { padding: 6px 10px; font-size: 13px; }

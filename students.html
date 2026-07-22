@@ -74,11 +74,15 @@
     padding: 2px 10px;
     border-radius: 20px;
     display: inline-block;
+    margin-bottom: 8px;
+  }
+  .student-thesis {
+    font-size: 12px;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin-top: 8px;
   }
   @media (max-width: 768px) {
-    .students-grid { grid-template-columns: repeat(2, 1fr); }
-  }
-  @media (max-width: 480px) {
     .students-grid { grid-template-columns: repeat(2, 1fr); }
   }
 </style>
@@ -88,7 +92,6 @@
   <a class="nav-name" href="index.html">Yang Huang</a>
   <div class="nav-links">
     <a href="index.html">Home</a>
-    
     <a href="publications.html">Publications</a>
     <a href="teaching.html">Teaching</a>
     <a href="students.html" class="active">Students</a>
@@ -100,28 +103,32 @@
     <h2>Students</h2>
 
     <div style="background: #FEF3F0; border-left: 4px solid #C0392B; border-radius: 6px; padding: 14px 20px; margin-bottom: 32px;">
-      <p style="color: #7B241C; font-size: 14px; margin: 0;">💡 請有興趣加入的碩士生務必於碩一上選修「機器學習」。</p>
+      <p style="color: #7B241C; font-size: 14px; margin: 0;">💡 請有興趣加入實驗室的碩士生務必於碩一上選修「機器學習」。</p>
     </div>
 
-    <div class="year-label">M.S. 2025</div>
+    <div class="year-label">Alumni</div>
     <div class="students-grid">
 
       <div class="student-card">
         <img class="student-photo" src="images/Students/2025/吳震韋.jpg" alt="吳震韋" onerror="this.style.display='none'">
         <div class="student-name">吳震韋</div>
         <div class="student-year">M.S. 2025</div>
+        <div class="student-thesis">
+          基於波動指標與文字探勘之加密貨幣預測方法<br>
+          <span style="font-style: italic;">Cryptocurrency Prediction Method Based on Volatility Indicator and Textual Analysis</span>
+        </div>
       </div>
+
+    </div>
+
+    <div class="year-label">Current Students</div>
+    <div class="students-grid">
 
       <div class="student-card">
         <img class="student-photo" src="images/Students/2025/吳宛玲.jpg" alt="吳宛玲" onerror="this.style.display='none'">
         <div class="student-name">吳宛玲</div>
         <div class="student-year">M.S. 2025</div>
       </div>
-
-    </div>
-
-    <div class="year-label">M.S. 2026</div>
-    <div class="students-grid">
 
       <div class="student-card">
         <img class="student-photo" src="images/Students/2026/陳中毅.jpg" alt="陳中毅" onerror="this.style.display='none'">

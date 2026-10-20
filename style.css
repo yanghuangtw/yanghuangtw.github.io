@@ -14,7 +14,8 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: 'DM Sans', sans-serif; color: var(--text); background: var(--bg); font-size: 15px; line-height: 1.7; text-align: justify; }
 
-nav { display: flex; align-items: center; justify-content: space-between; padding: 0 48px; height: 60px; border-bottom: 1px solid var(--border); background: var(--bg); position: sticky; top: 0; z-index: 100; text-align: left; }
+nav { padding: 0; height: 60px; border-bottom: 1px solid var(--border); background: var(--bg); position: sticky; top: 0; z-index: 100; }
+.nav-inner { max-width: 1080px; margin: 0 auto; padding: 0 32px; height: 100%; display: flex; align-items: center; justify-content: space-between; }
 .nav-name { font-family: 'DM Serif Display', serif; font-size: 20px; color: var(--text); text-decoration: none; }
 .nav-links { display: flex; gap: 4px; }
 .nav-links a { padding: 6px 16px; font-size: 14px; color: var(--text-muted); text-decoration: none; border-radius: 6px; transition: background 0.15s, color 0.15s; }
@@ -76,7 +77,7 @@ nav { display: flex; align-items: center; justify-content: space-between; paddin
 .two-col .section { margin-bottom: 0; }
 
 @media (max-width: 768px) {
-  nav { padding: 0 20px; }
+  .nav-inner { padding: 0 20px; }
   .nav-links a { padding: 6px 10px; font-size: 13px; }
 
   .container { padding: 28px 20px 60px; }
@@ -92,7 +93,8 @@ nav { display: flex; align-items: center; justify-content: space-between; paddin
 }
 
 @media (max-width: 480px) {
-  nav { height: auto; padding: 12px 16px; flex-wrap: wrap; gap: 10px; }
+  nav { height: auto; }
+  .nav-inner { padding: 12px 16px; flex-wrap: wrap; gap: 10px; }
   .nav-links { flex-wrap: wrap; gap: 4px; }
   .nav-links a { padding: 4px 8px; font-size: 12px; }
 

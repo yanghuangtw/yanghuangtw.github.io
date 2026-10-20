@@ -81,7 +81,6 @@
   <div class="section">
     <h2>About Me</h2>
     <p><strong>Yang Huang (黃揚)</strong> is currently an Assistant Professor in the Department of Business Administration at National Chung Hsing University. He received his Ph.D. in Information Management from National Yang Ming Chiao Tung University in 2024. Prior to joining NCHU, he served as a Postdoctoral Researcher at National Yang Ming Chiao Tung University and as a Visiting Researcher in the Department of Computer Science at the University of Manchester. His research interests include recommendation systems, machine unlearning, and applied machine learning, with a particular focus on deep learning-based personalized recommendation and privacy-preserving AI.</p>
-    <img src="images/合照.JPG" alt="Lab Photo" style="width: 100%; border-radius: 10px; margin-top: 16px; display: block;">
   </div>
 
   <div class="section" id="photo-before-research">
@@ -185,6 +184,52 @@
 
 
 </div>
+
+<div class="container" style="padding-top: 0;">
+  <div class="section">
+    <h2>Activities</h2>
+    <div style="position: relative;">
+      <div id="carousel" style="overflow: hidden; border-radius: 12px;">
+        <div id="carousel-track" style="display: flex; transition: transform 0.4s ease;">
+          <img src="images/Activities/合照.jpg" alt="Lab Activities" style="min-width: 100%; height: 420px; object-fit: cover; object-position: center;">
+          <img src="images/Activities/1.jpg" alt="Activity 1" style="min-width: 100%; height: 420px; object-fit: cover; object-position: center;">
+          <img src="images/Activities/2.jpg" alt="Activity 2" style="min-width: 100%; height: 420px; object-fit: cover; object-position: center;">
+          <img src="images/Activities/3.jpg" alt="Activity 3" style="min-width: 100%; height: 420px; object-fit: cover; object-position: center;">
+          <img src="images/Activities/4.jpg" alt="Activity 4" style="min-width: 100%; height: 420px; object-fit: cover; object-position: center;">
+          <img src="images/Activities/5.jpg" alt="Activity 5" style="min-width: 100%; height: 420px; object-fit: cover; object-position: center;">
+        </div>
+      </div>
+      <button onclick="moveCarousel(-1)" style="position: absolute; left: 12px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.45); border: none; color: white; width: 40px; height: 40px; border-radius: 50%; font-size: 18px; cursor: pointer; display: flex; align-items: center; justify-content: center;">&#8249;</button>
+      <button onclick="moveCarousel(1)" style="position: absolute; right: 12px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.45); border: none; color: white; width: 40px; height: 40px; border-radius: 50%; font-size: 18px; cursor: pointer; display: flex; align-items: center; justify-content: center;">&#8250;</button>
+      <div id="carousel-dots" style="position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 6px;">
+        <span onclick="goToSlide(0)" style="width: 8px; height: 8px; border-radius: 50%; background: white; opacity: 1; cursor: pointer; display: block;"></span>
+        <span onclick="goToSlide(1)" style="width: 8px; height: 8px; border-radius: 50%; background: white; opacity: 0.45; cursor: pointer; display: block;"></span>
+        <span onclick="goToSlide(2)" style="width: 8px; height: 8px; border-radius: 50%; background: white; opacity: 0.45; cursor: pointer; display: block;"></span>
+        <span onclick="goToSlide(3)" style="width: 8px; height: 8px; border-radius: 50%; background: white; opacity: 0.45; cursor: pointer; display: block;"></span>
+        <span onclick="goToSlide(4)" style="width: 8px; height: 8px; border-radius: 50%; background: white; opacity: 0.45; cursor: pointer; display: block;"></span>
+        <span onclick="goToSlide(5)" style="width: 8px; height: 8px; border-radius: 50%; background: white; opacity: 0.45; cursor: pointer; display: block;"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  let current = 0;
+  const total = 6;
+  function updateCarousel() {
+    document.getElementById('carousel-track').style.transform = 'translateX(-' + (current * 100) + '%)';
+    const dots = document.querySelectorAll('#carousel-dots span');
+    dots.forEach((d, i) => d.style.opacity = i === current ? '1' : '0.45');
+  }
+  function moveCarousel(dir) {
+    current = (current + dir + total) % total;
+    updateCarousel();
+  }
+  function goToSlide(i) {
+    current = i;
+    updateCarousel();
+  }
+</script>
 
 <div style="text-align: center; padding: 20px 0 40px;">
   <img src="https://visitor-badge.laobi.icu/badge?page_id=yanghuangtw.github.io" alt="Visitors">

@@ -13,6 +13,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Teaching | Yang Huang</title>
 <link rel="stylesheet" href="style.css">
+<style>
+  .courses-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 8px;
+  }
+  .course-item {
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid var(--border);
+    border-bottom: 1px solid var(--border) !important;
+    border-radius: 12px;
+    padding: 24px 20px !important;
+    gap: 12px !important;
+  }
+  @media (max-width: 768px) {
+    .courses-grid { grid-template-columns: 1fr; }
+  }
+</style>
 </head>
 <body>
 <nav>
@@ -29,31 +49,33 @@
 <div class="container">
   <div class="section">
     <h2>Teaching</h2>
-    <div class="course-item">
-      <div class="course-icon">
-        <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+    <div class="courses-grid">
+      <div class="course-item">
+        <div class="course-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <div>
+          <div class="course-name">Introduction to Artificial Intelligence</div>
+          <div class="course-desc">人工智慧概論 — An overview of AI concepts, algorithms, and applications including search, knowledge representation, machine learning, and natural language processing.</div>
+        </div>
       </div>
-      <div>
-        <div class="course-name">Introduction to Artificial Intelligence</div>
-        <div class="course-desc">人工智慧概論 — An overview of AI concepts, algorithms, and applications including search, knowledge representation, machine learning, and natural language processing.</div>
+      <div class="course-item">
+        <div class="course-icon">
+          <svg viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
+        </div>
+        <div>
+          <div class="course-name">Machine Learning</div>
+          <div class="course-desc">機器學習 — Core algorithms and techniques in supervised, unsupervised, and reinforcement learning with hands-on programming assignments.</div>
+        </div>
       </div>
-    </div>
-    <div class="course-item">
-      <div class="course-icon">
-        <svg viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
-      </div>
-      <div>
-        <div class="course-name">Machine Learning</div>
-        <div class="course-desc">機器學習 — Core algorithms and techniques in supervised, unsupervised, and reinforcement learning with hands-on programming assignments.</div>
-      </div>
-    </div>
-    <div class="course-item">
-      <div class="course-icon">
-        <svg viewBox="0 0 24 24"><path d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"/></svg>
-      </div>
-      <div>
-        <div class="course-name">Database Management</div>
-        <div class="course-desc">資料庫管理 — Relational database design, SQL, transaction management, and an introduction to NoSQL systems.</div>
+      <div class="course-item">
+        <div class="course-icon">
+          <svg viewBox="0 0 24 24"><path d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"/></svg>
+        </div>
+        <div>
+          <div class="course-name">Database Management</div>
+          <div class="course-desc">資料庫管理 — Relational database design, SQL, transaction management, and an introduction to NoSQL systems.</div>
+        </div>
       </div>
     </div>
   </div>

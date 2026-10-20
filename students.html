@@ -27,7 +27,7 @@
   }
   .students-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     margin-bottom: 8px;
   }
@@ -90,7 +90,10 @@
     line-height: 1.5;
     margin-top: 8px;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
+    .students-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+  @media (max-width: 600px) {
     .students-grid { grid-template-columns: repeat(2, 1fr); }
   }
 </style>
@@ -113,7 +116,18 @@
       <p style="color: #7B241C; font-size: 14px; margin: 0;">💡 請有興趣加入實驗室的碩士生務必於碩一上選修「機器學習」。</p>
     </div>
 
-    <div class="year-label">Current Students 在校生</div>
+    <div class="year-label">Current Students 在校生 — Ph.D.</div>
+    <div class="students-grid">
+
+      <div class="student-card">
+        <img class="student-photo" src="images/Students/2027/吳雅婷.jpg" alt="吳雅婷" onerror="this.style.display='none'">
+        <div class="student-name">吳雅婷</div>
+        <div class="student-year">Ph.D. 2027</div>
+      </div>
+
+    </div>
+
+    <div class="year-label">Current Students 在校生 — M.S.</div>
     <div class="students-grid">
 
       <div class="student-card">
